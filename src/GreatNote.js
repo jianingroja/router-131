@@ -15,7 +15,9 @@ export default function GreateNote() {
         <h2>Great Note</h2>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link defaultChecked to="/">
+              Home
+            </Link>
           </li>
           <li>
             <Link to="/info-center">个人中心</Link>
