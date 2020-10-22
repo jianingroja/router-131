@@ -15,9 +15,7 @@ export default function GreateNote() {
         <h2>Great Note</h2>
         <ul>
           <li>
-            <Link defaultChecked to="/">
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/info-center">个人中心</Link>
@@ -33,9 +31,6 @@ export default function GreateNote() {
         <hr />
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route path="/info-center">
             <Info />
           </Route>
@@ -44,6 +39,9 @@ export default function GreateNote() {
           </Route>
           <Route path="/note-list">
             <NoteList />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
