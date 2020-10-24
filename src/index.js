@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import GreateNote from "./GreatNote";
+import App from "./greatNote/index";
+// import GreateNote from "./GreatNote";
 // import NestingExample from "./NestingExample";
 //import ParamsExample from "./ParamsExample";
 
 ReactDOM.render(
   <React.StrictMode>
-    <GreateNote />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

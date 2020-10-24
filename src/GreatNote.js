@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,23 +13,26 @@ export default function GreateNote() {
   return (
     <Router>
       <div>
-        <h2>Great Note</h2>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/info-center">个人中心</Link>
-          </li>
-          <li>
-            <Link to="/create-note">创建笔记</Link>
-          </li>
-          <li>
-            <Link to="/note-list">笔记列表</Link>
-          </li>
-        </ul>
+        <nav>
+          <h2>Great Note</h2>
+          <ul>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
 
-        <hr />
+            <Link to="/info-center">
+              <li>个人中心 </li>
+            </Link>
+
+            <Link to="/create-note">
+              <li>创建笔记 </li>
+            </Link>
+
+            <Link to="/note-list">
+              <li>笔记列表 </li>
+            </Link>
+          </ul>
+        </nav>
 
         <Switch>
           <Route path="/info-center">
@@ -40,6 +44,7 @@ export default function GreateNote() {
           <Route path="/note-list">
             <NoteList />
           </Route>
+          {/* how to make it default?? */}
           <Route path="/">
             <Home />
           </Route>
